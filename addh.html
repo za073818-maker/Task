@@ -1,0 +1,80 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="adds.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <p>Personal Course Organizer</p>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="coursesh.html">My Courses</a></li>
+        <li><a href="addh.html">Add Courses</a></li>
+        <li><a href="contacth.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    <main>
+      <br>
+      <section>
+        <h2>Adding Courses Section</h2>
+        <div class="fset">
+          <fieldset>
+            <legend>Course Info</legend>
+            <form>
+              <div class="align">
+                <label for="nam">Course Name</label>
+                <input
+                  name="Course Name"
+                  title="e.g., Math-2"
+                  id="nam"
+                  type="text"
+                  placeholder="place your course name here"
+                  required
+                />
+              </div>
+              <div class="align">
+                <label for="ins">Instructor</label>
+                <input
+                  name="Instructor"
+                  title="e.g., Dr. Mahmoud"
+                  id="ins"
+                  type="text"
+                  placeholder="place instructor's course here"
+                  required
+                />
+              </div>
+              <div class="align">
+                <label for="cre"> Credit Hours</label>
+                <input
+                  name="Credit Hours"
+                  title="e.g., 3"
+                  id="cre"
+                  type="number"
+                  placeholder="place the course's hours here"
+                  required
+                />
+              </div>
+              <div class="align">
+                <label for="not">Notes</label>
+                <textarea
+                  id="not"
+                  placeholder="give us more informaion about your course (optional)"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn1">Save</button>
+              <button type="reset" class="btn2">Reset</button>
+            </form>
+          </fieldset>
+        </div>
+      </section>
+      <br>
+    </main>
+    <footer>
+      <p>Made by Ziad 20250398</p>
+    </footer>
+  </body>
+</html>

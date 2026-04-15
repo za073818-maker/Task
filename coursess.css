@@ -1,0 +1,155 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+/* header section */
+header {
+  text-align: center;
+  background-color: blue;
+}
+header p {
+  padding: 15px 20px;
+  font-size: 22px;
+  color: white;
+  background-color: rgb(26, 40, 193);
+}
+
+/* nav section */
+nav {
+  background-color: blue;
+  padding: 0;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 700px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0;
+    }
+}
+nav li {
+  flex: 1 1 auto;
+  min-width: 120px;
+}
+@media (max-width: 700px) {
+    nav li {
+        flex: 1 1 100%;
+        min-width: auto;
+    }
+}
+
+a {
+  position: relative;
+  display: block;
+  padding: 1rem;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  transition: 1s;
+}
+a:hover {
+  font-size: 18px;
+  background-color: rgb(26, 40, 193);
+}
+a::before {
+  content: "";
+  left: 0;
+  height: 2px;
+  position: absolute;
+  width: 0%;
+  bottom: 0;
+  background-color: white;
+  transition: 1s;
+}
+a:hover::before {
+  width: 100%;
+}
+
+/* main, section section */
+main {
+  background-color: rgb(100, 100, 250);
+}
+section {
+  padding: 79px 10px;
+}
+table {
+  width: 70%;
+  margin: 0 15%;
+  padding: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  background-color: white;
+}
+@media (max-width: 450px) {
+    table {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+}
+table caption p {
+  background-color: blue;
+  color: white;
+  padding: 25px;
+  background-color: rgb(26, 40, 193);
+}
+@media (max-width: 450px) {
+    table caption p {
+      font-size: 15px;
+    }
+}
+th {
+  border: 2px solid;
+  height: 50px;
+  background-color: blue;
+  color: white;
+}
+@media (max-width: 450px) {
+    th {
+      font-size: 12px;
+    }
+}
+td {
+  border: 2px solid;
+  height: 40px;
+}
+@media (max-width: 450px) {
+    td {
+      font-size: 10px;
+    }
+}
+
+/* footer section */
+footer {
+  text-align: center;
+  background-color: blue;
+  width: 100%;
+  bottom: 0;
+}
+
+footer p {
+  color: white;
+  padding: 30px;
+  letter-spacing: 2px;
+}
+@media (max-width: 700px) {
+    footer p {
+      font-size: 13px;
+    }
+}
+@media (max-width: 450px) {
+    footer p {
+      font-size: 10px;
+    }
+}
